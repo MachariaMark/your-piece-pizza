@@ -1,0 +1,25 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* whitesmoke color*/
+.info {
+    background: whitesmoke;
+}
+
+/*black color #000*/
+.primary-color {
+    color: #000;
+}
+
+.info h2 {
+    word-spacing: 0.6rem;
+}
+
+.info a {
+    transition: clor 2s ease-in-out;
+}
+
+.info a:hover {
+    color: red;
+}
