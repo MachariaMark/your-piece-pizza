@@ -17,7 +17,7 @@ body {
 }
 
 .info a {
-    transition: clor 2s ease-in-out;
+    transition: color 2s ease-in-out;
 }
 
 .info a:hover {
