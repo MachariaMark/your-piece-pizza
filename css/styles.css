@@ -1,5 +1,6 @@
 body {
     font-family: 'Nunito', sans-serif;
+    color: bisque;
 }
 
 /*BISQUE COLOR*/
@@ -11,12 +12,8 @@ body {
 .primary-color {
     color: #000;
 }
-/*TOP ICONS STYLES*/
-.info h2 {
-    word-spacing: 0.6rem;
-}
-/*END OF TOP ICONS STYLES*/
-/*FOTTER STYLES*/
+
+/*ICONS STYLES*/
 .info h2 {
     word-spacing: 0.6rem;
 }
@@ -28,4 +25,52 @@ body {
 .info a:hover {
     color: red;
 }
-/*END OF FOTTER STYLES*/
+/*END OF ICONS STYLES*/
+
+/*########HEADER#########*/
+#header {
+    height: calc(100vh - 94px);
+    background: url(../img/set.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.height-90 {
+    height: calc(100vh - 94px);
+}
+.banner h1 {
+    border-top: 6px double bisque;
+    border-bottom: 6px double bisque; 
+}
+
+
+
+
+
+.main-btn {
+    color: #000;
+    font-size: 2rem;
+    border: 2px solid bisque;
+    transition: all 1.5s ease-in-out;
+}
+.main-btn:hover {
+    color: bisque;
+    border: 2pt solid whitesmoke;
+    background: #000;
+}
+
+.header-link {
+    display: inline-block;
+    position: absolute;
+    bottom: 0.555rem;
+    left: 50%;
+    background: bisque;
+    border-radius: 10px;
+    transition: all 2s ease;
+}
+
+.header-link:hover {
+    color: red;
+}
