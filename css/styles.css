@@ -42,11 +42,28 @@ body {
 }
 .banner h1 {
     border-top: 6px double bisque;
-    border-bottom: 6px double bisque; 
+    border-bottom: 6px double bisque;
+    animation: fromLeft;
+    animation-duration: 4s; 
+    animation-delay: 1.125s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 
-
+@keyframes fromLeft {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(30px)
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 
 .main-btn {
@@ -54,12 +71,35 @@ body {
     font-size: 2rem;
     border: 2px solid bisque;
     transition: all 1.5s ease-in-out;
+
 }
 .main-btn:hover {
-    color: bisque;
+    color: red;
     border: 2pt solid whitesmoke;
     background: #000;
 }
+.pizza-btn {
+    animation: fromRight;
+    animation-duration: 4s; 
+    animation-delay: 1.125s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromRight {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-30px)
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 
 .header-link {
     display: inline-block;
@@ -69,8 +109,23 @@ body {
     background: bisque;
     border-radius: 10px;
     transition: all 2s ease;
+    animation: fromBottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 .header-link:hover {
     color: red;
+}
+
+@keyframes fromBottom {
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
 }
