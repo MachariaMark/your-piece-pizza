@@ -2,24 +2,30 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-/* whitesmoke color*/
+/*BISQUE COLOR*/
 .info {
-    background: whitesmoke;
+    background: bisque;
 }
 
-/*black color #000*/
+/*BLACK COLOR #000*/
 .primary-color {
     color: #000;
 }
-
+/*TOP ICONS STYLES*/
+.info h2 {
+    word-spacing: 0.6rem;
+}
+/*END OF TOP ICONS STYLES*/
+/*FOTTER STYLES*/
 .info h2 {
     word-spacing: 0.6rem;
 }
 
 .info a {
-    transition: color 2s ease-in-out;
+    transition: color 1.125s ease-in-out;
 }
 
 .info a:hover {
     color: red;
 }
+/*END OF FOTTER STYLES*/
