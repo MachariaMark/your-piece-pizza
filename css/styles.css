@@ -137,7 +137,7 @@ body {
     position: relative;
     /* FOR THE LINK */
     overflow: hidden;
-    background: linear-gradient(rgb(0,0,0)rgb(0,0,0));
+    background: linear-gradient(rgb(0,0,0),rgb(0,0,0));
     transition: all 2s ease;
 }
 
@@ -147,5 +147,54 @@ body {
 
 .item-container:hover .item-img {
     transform:  scale(1.2);
+    opacity: 0.5;
+}
 
+
+.item-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: bisque;
+    font-size: 2rem;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+    transition: 2s all ease;
+    opacity: 0;
+}
+
+.item-container:hover .item-link {
+    opacity: 1;
+}
+
+.item-link:hover {
+    color: red;
+    border: 3px solid red;
+    background: black;
+    color: whitesmoke;
+}
+
+.item-container:hover {
+    outline: 10px solid bisque;
+    outline-offset: 0.8rem;
+}
+/* ##############MENU############ */
+
+#menu {
+    background: linear-gradient(rgba(255,255,255,0.455),rgba(255,255,255,0.455)),
+    url(../img/Roasted-Vegetable-Pizza.jpg)center/cover fixed no-repeat;
+}
+
+.special {
+    border: 7px ridge red;
+    position: relative;
+}
+
+.special-text {
+    position: absolute;
+    top: 0;
+    right: 0%;
+    background: black; 
+    color: bisque;
 }
