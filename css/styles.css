@@ -1,4 +1,5 @@
 body {
+    overflow-x: hidden;
     font-family: 'Nunito', sans-serif;
     color: bisque;
     background: url(../img/neon-pizza-sign.png)center/cover fixed no-repeat;
