@@ -1,6 +1,7 @@
 body {
     font-family: 'Nunito', sans-serif;
     color: bisque;
+    background: url(../img/neon-pizza-sign.png)center/cover fixed no-repeat;
 }
 
 /*BISQUE COLOR*/
@@ -128,4 +129,23 @@ body {
     100%{
         transform: translateY(-10px);
     }
+}
+
+
+/* ############MENU ITEMS########## */
+.item-container {
+    position: relative;
+    /* FOR THE LINK */
+    overflow: hidden;
+    background: linear-gradient(rgb(0,0,0)rgb(0,0,0));
+    transition: all 2s ease;
+}
+
+.item-img {
+    transition: all 2s ease;
+}
+
+.item-container:hover .item-img {
+    transform:  scale(1.2);
+
 }
