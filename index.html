@@ -12,7 +12,7 @@
     <!-- JQUERY-->
     <script src="js/jquery-3.4.1.js"></script>
     <!-- CUSTOM JAVASCRIPT-->
-    <script defer src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
     <!-- BOOTSTRAP JS-->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- FONT AWESOME JS-->
@@ -28,7 +28,7 @@
         <div class="row">
             <div class="col d-flex justify-content-between aling-items-basline felx-wrap">
                 <div class="info-icons p-1">
-                    <a href="#menu"  target="_blank" class="mr-2 primary-color"><i class="fas fa-pizza-slice fa-3x"></i></a>
+                    <a href="#menu" class="mr-2 primary-color"><i class="fas fa-pizza-slice fa-3x"></i></a>
                 </div>
                 <h2 class="primary-color p-2 text-capitalize">#getyourpiecehot!!</h2>
             </div>
@@ -107,7 +107,7 @@
                         <img src="img/menu-item5.jpeg" class="img-fluid img-thumbnail item-img" alt="menu item">
                         <a href="img/menu-item5.jpeg">
                             <h1 class="text-uppercase text-center item-link px-3">
-                                pepperoni pizza
+                                pepperoni 
                             </h1>
                         </a>
                     </div> 
@@ -308,75 +308,110 @@
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4">
                     <form action="" method="" id="form">
-                    <div class="form-group">
-                        <label for="size">Pizza Size:</label>
-                        <select name="size" id="size" class="form-control">
-                            <option label="small" value="small"></option>
-                            <option label="medium" value="medium"></option>
-                            <option label="large" value="large"></option>
+                        <label for="Pizza" class="lables"><b>Pizza:</b></label>
+                        <select required class="form-control" id="pizza">
+                            <option id="Margherita" value="1000 KES Margherita">
+                                Margherita ksh 1,000
+                            </option>
+                            <option id="Stromboli" value="1500 KES Stromboli">
+                                Stromboli ksh 1,500
+                            </option>
+                            <option id="Marinara" value="2000 KES Marinara">
+                                Marinara ksh 2,000
+                            </option>
+                            <option id="Neapolitan" value="1000 KES Neapolitan">
+                                Neapolitan ksh 1,000
+                            </option>
+                            <option id="pepperoni" value="1500 KES pepperoni">
+                                pepperoni ksh 1,500
+                            </option>
+                            <option id="Calzone" value="2000 KES Calzone">
+                               Calzone ksh 2,000
+                            </option>
                         </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="crust">Pizza Crust:</label>
-                        <select name="crust" id="crust" class="form-control">
-                            <option label="CHEESE-STUFFED CRUST" value="CHEESE-STUFFED CRUST"></option>
-                            <option label="NEAPOLITAN CRUST" value="NEAPOLITAN CRUST"></option>
-                            <option label="THIN CRUST" value="THIN CRUST"></option>
-                            <option label="FLATBREAD" value="FLATBREAD"></option>
+                        <div class="form-group">
+                            <label for="size" class="lables"><b>Pizza Size:</b></label>
+                            <select required name="size" id="size" class="form-control">
+                                <option id="small" value="1000 KES small" label="small KES 1,000"></option>
+                                <option id="regular" value="1000 KES regular" label="regular KES 1,000"></option>
+                                <option id="medium" value="1500 KES Medium" label="Medium KES 1,500"></option>
+                                <option id="large" value="2000 KES large" label="Large KES 2,000"></option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="crust" class="lables"><b>Pizza Crust:</b></label>
+                            <select required name="crust" id="crust" class="form-control">
+                                <option id="Cheese-Stuffed"  value="Cheese-Stuffed ksh 250" label="Cheese-Stuffed ksh 250"></option>
+                                <option id="Neapolitan"  value="Neapolitan ksh 450" label="Neapolitan ksh 450"></option>
+                                <option id="Thin"  value="Thin ksh 150" label="Thin ksh 150"></option>
+                                <option id="flatbread"  value="Flatbread ksh 350" label="Flatbread ksh 350"></option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="toppings" class="lables"><b>Toppings:</b></label>
+                            <select required class="form-control mb-2" id="topping">
+                                <option id="Mushrooms" value="150 KES Mushrooms" label="150 KES Mushrooms"></option>
+                                <option id="pepperoni" value="200 KES pepperoni" label="200 KES pepperoni"></option>
+                                <option id="Onions" value="100 KES Onions" label="100 KES Onions"></option>
+                                <option id="Extra cheese" value="150 KES Extra cheese" label="150 KES Extra cheese"></option>
+                                <option id="Black olives" value="150 KES Black olives" label="150 KES Black olives"></option>
+                                <option id="Pineapple" value="200 KES Pineapple" label="200 KES Pineapple"></option>
+                                <option id="Ham" value="100 KES Ham" label="100 KES Ham"></option>     
+                            </select>
+                        </div>
+                        <label for="delivery" class="lables"><b>Delivery:</b></label>
+                        <select required class="form-control" id="delivery">
+                            <option id="delivery1" value="200 KES delivery">Delivery -  KES 200</option>
+                            <option id="pickup" value="pickup">pickup</option>
                         </select>
-                    </div>
-                    <div class="form-group">
-                            <label for="toppings">Pizza Toppings:</label>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="MUSHROOMS">
-                                <label class="custom-control-label" for="MUSHROOMS">MUSHROOMS</label>
+                        <form class="form-group checkout">
+                            <div class="">
+                                <label for="name" class="lables"><b>Name:</b></label>
+                                <input type="text" class="form-control" id="name" placeholder="Name..." name="name" required>
+                                <label for="phone" class="lables"><b>contacts:</b></label>
+                                <input type="text" class="form-control" id="number" placeholder="+254XXXXXXXX" name="number" required>
+                                <label for="delivery" class="lables"><b>Instructions:</b></label>
+                                <textarea type="text" id="address" class="form-control" placeholder="instructions" required></textarea>
                             </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="PEPPERONI:">
-                                <label class="custom-control-label" for="PEPPERONI:">PEPPERONI</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="ONIONS">
-                                <label class="custom-control-label" for="ONIONS">ONIONS</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="EXTRA CHEESE">
-                                <label class="custom-control-label" for="EXTRA CHEESE">EXTRA CHEESE</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">  
-                                <input type="checkbox" class="custom-control-input" id="BLACK OLIVES">
-                                <label class="custom-control-label" for="BLACK OLIVES">BLACK OLIVES</label>
-                            </div>    
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="PINEAPPLE">
-                                <label class="custom-control-label" for="PINEAPPLE">PINEAPPLE</label>
-                            </div>
-                            <div class="custom-control custom-checkbox"> 
-                                <input type="checkbox" class="custom-control-input" id="HAM">
-                                <label class="custom-control-label" for="HAM">HAM</label>
+                            <label for="amount" class="lables"><b>Quantity:</b></label>
+                            <input id="amount" class="product-quantity form-control" name="product_quantity" value="0">    
+                        </form>
+                         <!-- <button class="btn btn-primary btn-md btn-block mt-4 mb-2">CHECKOUT</button> -->
+                        <!-- Modal -->
+                        <!-- BUTTON TRIGGER MODAL -->
+                        <a href="#receipt">
+                                <button<a href="#receipt" type="button" class="btn btn-primary btn-block mt-4 mb-4" data-toggle="modal" data-target="#exampleModalCenter" id="checkout7"onclick="getValue();">
+                                    Summary
+                                </button>
+                            </a>
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-Centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Order Summary</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save</button>
+                                </div>
                             </div>
                         </div>
-                    <button class="btn btn-primary btn-md btn-block">SUBMIT</button>
+                        <!-- END OF MODAL -->    
+
+                        
                     </form>
-                </div>
-                <div class="col-sm-4">
-                    <div class="form-group">
-                        <label for="size">DELIVERY/PICK-UP:</label>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" class="custom-control-input" id="delivery" name="delivery" required>
-                            <label class="custom-control-label" for="delivery">DELIVERY</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" class="custom-control-input" id="PICK-U" name="PICK-UP" required>
-                            <label class="custom-control-label" for="PICK-U">PICK-UP</label>
-                        </div>
-                    </div>    
-                </div>
+                </div>               
             </div>
         </div>
     </article>
+          
     
-
 
     <!--END OF FORM SECTION-->
     <!--SOCIAL ICONS-->
@@ -394,8 +429,6 @@
         </div>
     </footer>
     <!--END OF SOCIAL ICONS-->
-
-
 
 </body>
 </html>
