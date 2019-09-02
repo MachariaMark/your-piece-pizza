@@ -199,3 +199,11 @@ body {
     background: black; 
     color: bisque;
 }
+
+.index-form {
+    width: 100%;
+    background: url(../img/set.jpeg)center/cover fixed no-repeat;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    scroll-padding-bottom: 60px;
+}
